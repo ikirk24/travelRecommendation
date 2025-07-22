@@ -7,7 +7,7 @@
 /* Nav Bar */
 
 nav {
-    background-color: rgb(209, 112, 27);
+    background-color: rgba(6, 58, 73, 0.646);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -36,7 +36,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 nav a {
@@ -65,15 +65,60 @@ nav a {
 
 #searchContainer button {
     margin-right: 10px;
-    background-color: rgb(209, 112, 27);
+    background-color: rgb(9, 95, 121);
     border: none;
     outline: none;
     cursor:  pointer;
-    padding: 5px;
+    padding: 8px;
     border-radius: 10px;
     color: white;
 }
 
 #searchContainer button:hover{
-    background-color: rgb(127, 69, 18); ;
+    background-color: rgb(4, 56, 72);
+
+}
+
+/* Home Page Body */ 
+
+body {
+    background-image: url(./images/nightTime.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#homeTitle {
+    color: rgb(255, 241, 241);
+    font-size: 50px;
+    width: 350px;
+    transform: translate(230px, 150px);
+    background-color: rgba(48, 54, 60, 0.21);
+    font-weight: bold;
+}
+
+#homeDescription {
+    color: rgb(255, 241, 241);
+    font-size: 16px;
+    width: 300px;
+    transform: translate(230px, 200px);
+    background-color: rgba(48, 54, 60, 0.21);
+    line-height: 20px;
+}
+
+#bookBtn {
+    color: rgb(255, 241, 241);
+    transform: translate(230px, 250px);
+    background-color: rgb(9, 95, 121);
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#bookBtn:hover {
+    background-color: rgb(4, 56, 72);
+    
 }
