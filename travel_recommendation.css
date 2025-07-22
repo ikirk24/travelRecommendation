@@ -26,7 +26,7 @@ nav {
 
 #title h1 {
     padding-left: 10px;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -124,12 +124,15 @@ body {
     background-color: rgb(4, 56, 72);
     }
 
+    /* sidebar icons */
+
 #sideBar {
     width: 20px;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    
+    position: relative;
+    translate: (230px, 230px);
 }
 
 #sideBar li {
@@ -146,4 +149,148 @@ body {
     color: rgb(217, 196, 196);
     font-size: 40px;
     transition: font-size .5s;
+}
+
+/* About us Page */ 
+
+#aboutTitle { 
+    color: rgb(255, 241, 241);
+    font-size: 50px;
+    width: 260px;
+    transform: translate(200px, 40px);
+    background-color: rgba(48, 54, 60, 0.102);
+    font-weight: bold;
+}
+
+#aboutDes {
+     color: rgb(255, 241, 241);
+    font-size: 16px;
+    width: 1000px;
+    transform: translate(230px, 100px);
+    background-color: rgba(27, 29, 30, 0.516);
+    line-height: 20px;
+}
+
+#ourTeam { 
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    color: rgb(255, 241, 241);
+    transform: translate(430px, 200px);
+    padding: 20px;
+    background-color: rgba(27, 29, 30, 0.247);
+    position: absolute;
+}
+
+#ourTeam h2 {
+    font-size: 40px;
+    width: 20px;
+    margin-right: 150px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.employee { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    background-color: rgba(27, 29, 30, 0.516);
+    width: 180px;
+
+}
+
+.employee h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.employee p {
+    font-size: 12px;
+    color: rgb(172, 167, 167);
+    
+}
+.teamBtn {
+    width: 90%;
+    margin-left: 10px;
+    background-color: rgb(9, 95, 121);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 241, 241);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.teamBtn:hover {
+    background-color: rgb(4, 56, 72);
+    }
+
+/* Contact Us Page */ 
+
+#contactTitle {
+    color: rgb(255, 241, 241);
+    transform: translate(230px, 200px);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+
+#contactDes {
+    color: rgb(255, 241, 241);
+    transform: translate(230px, 300px);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#contactForm{
+    color: rgb(255, 241, 241);
+    background-color: rgba(27, 29, 30, 0.421);
+    width: 60%;
+    transform: translate(800px, 70px);
+    border-radius: 10px ;
+    padding: 10px;
+    position: absolute;
+}
+
+#contactForm label{
+    color: rgba(255, 241, 241, 0.763);
+    
+}
+
+#contactForm input {
+    outline: rgb(153, 153, 153);;
+    border: rgba(209, 209, 209, 0.999) solid 1px;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: transparent;
+    color: rgb(255, 241, 241);
+    width: 75%;
+}
+
+#contactForm textarea{
+    outline: rgb(153, 153, 153);;
+    border: rgba(209, 209, 209, 0.999) solid 1px;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: transparent;
+    color: rgb(255, 241, 241);
+    width: 75%;
+    height: 140px;
+}
+
+#contactForm button {
+    width: 75%;
+    color: rgb(255, 241, 241);
+    background-color: rgb(9, 95, 121);
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#contactForm button:hover {
+    background-color: rgb(5, 65, 83);
+
 }

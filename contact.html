@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--NAV BAR-->
+    <nav>
+        <div id="title">
+            <img src="./images/travelIcon.png" alt="" width="75px" height="75px">
+            <h1>TravelGo</h1>
+        </div>
+        
+        <ul>
+            <li><a href="travel_recommendation.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div id="searchContainer">
+            <input type="text" placeholder="Enter a destination or keyword">
+            <button id="searchBtn">Search</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+    </nav>
+    <!--Contact Us page -->
+    <h1 id="contactTitle">CONTACT US</h1>
+    <p id="contactDes">Get in touch</p>
+
+    <form id="contactForm">
+        <label for="name">Name</label><br><br>
+        <input type="text" id="name" placeholder="Type your name"><br><br>
+
+        <label for="email">Email</label><br><br>
+        <input type="email" id="email" placeholder="Type your email"><br><br>
+
+        <label for="message">Message</label><br><br>
+        <textarea placeholder="Type your message"></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <!--Side bar-->
+    <div id="sideBar">
+        <ul>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+    </div>
+</body>
+</html>
