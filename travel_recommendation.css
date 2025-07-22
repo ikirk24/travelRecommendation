@@ -8,7 +8,7 @@
 
 nav {
     background-color: rgba(6, 58, 73, 0.646);
-    color: white;
+    color: rgb(255, 241, 241);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,8 +26,9 @@ nav {
 
 #title h1 {
     padding-left: 10px;
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav ul {
@@ -41,7 +42,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 241, 241);
     font-size: 20px;
 }
 
@@ -71,7 +72,8 @@ nav a {
     cursor:  pointer;
     padding: 8px;
     border-radius: 10px;
-    color: white;
+    color: rgb(255, 241, 241);
+
 }
 
 #searchContainer button:hover{
@@ -120,5 +122,28 @@ body {
 
 #bookBtn:hover {
     background-color: rgb(4, 56, 72);
+    }
+
+#sideBar {
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
     
+}
+
+#sideBar li {
+    list-style: none;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(255, 241, 241);
+    transition: font-size .5s;
+    }
+
+#sideBar li:hover{
+    color: rgb(217, 196, 196);
+    font-size: 40px;
+    transition: font-size .5s;
 }
