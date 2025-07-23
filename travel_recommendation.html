@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
+    <!--Nav Bar -->
     <nav>
         <div id="title">
             <img src="./images/travelIcon.png" alt="" width="75px" height="75px">
@@ -20,18 +22,21 @@
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <div id="searchContainer">
-            <input type="text" placeholder="Enter a destination or keyword">
+            <input type="text" placeholder="Enter a destination or keyword" id="input">
             <button id="searchBtn">Search</button>
             <button id="clearBtn">Clear</button>
         </div>
     </nav>
 
+    <!--Home page title and description-->
     <div id="homeTitle">
         EXPLORE DREAM DESTINATION
     </div>
     <p id="homeDescription">It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivatess the heart and ignites a sense of wonder
     </p>
     <button id="bookBtn">BOOK NOW</button>
+    
+    <!--Side Bar Icons-->
 
     <div id="sideBar">
         <ul>
@@ -41,5 +46,12 @@
             <li><i class="fa-brands fa-youtube"></i></li>
         </ul>
     </div>
+
+    <!--Recommendation Results -->
+    <div id="recContainer">
+
+    </div>
+
+    <script src="./travel_recommendation.js"></script>
 </body>
 </html>
