@@ -1,18 +1,25 @@
 const searchBtn = document.getElementById('searchBtn');
 const input = document.getElementById('input').value;
 const clearBtn = document.getElementById('clearBtn');
-const recContainer = document.getElementById('recContainer');
+    const apiUrl = './travel_recommendation_api.json';
+
 
 function getApi () {
-    const apiUrl = './travel_recommendation_api.json';
 
     fetch(apiUrl).then((response) => response.json())
                 .then((data) => {
-                    console.log(data);
-                })
+            const recContainer = document.getElementById('recContainer');
+            if (input.toLowerCase() === 'beaches' || 'beach'){
+            const dataHTML = data.map((places)=> {
+            `<img src='${places.beaches.img}>
+             <h3>${places.beaches.name}</h3>
+             <p>${places.beaches.description}</p>
+             <button>Visit</button>`
+             recContainer.innerHTML = dataHTML;
+        })
+                }})
 }
 
-function showRec(keyWord) {
+searchBtn.addEventListener('click', getApi)
     
-}
-getApi();
+// getApi();
