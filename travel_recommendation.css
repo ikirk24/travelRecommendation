@@ -97,6 +97,11 @@ body {
     flex-direction: column;
 }
 
+#flexDiv {
+    display: flex;
+    flex-direction: column;
+}
+
 #homeTitle {
     color: rgb(255, 241, 241);
     font-size: 50px;
@@ -137,9 +142,8 @@ body {
     width: 20px;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    position: relative;
-    translate: (230px, 230px);
+    margin-top: 200px;
+    position: fixed;
 }
 
 #sideBar li {
@@ -183,7 +187,7 @@ body {
     justify-content: space-between;
     width: 800px;
     color: rgb(255, 241, 241);
-    transform: translate(430px, 200px);
+    transform: translate(430px, 300px);
     padding: 20px;
     background-color: rgba(27, 29, 30, 0.247);
     position: absolute;
@@ -326,17 +330,41 @@ body {
 
 .container h3 {
     /* margin: 10px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
     padding-top: 10px;
     padding-left: 10px;
 }
 
 .container p{ 
-    color: grey;
+    color: rgba(128, 128, 128, 0.437);
     padding: 10px;
+    font-size: 12px;
 }
 
 #recContainer {
     display: flex;
     flex-direction: column;
+    position: absolute;
     width: 25%;
+    right: 30px;
+}
+
+.container button {
+    padding: 4px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    background-color: rgb(9, 95, 121);
+     border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(255, 241, 241);
+    width:60px;
+}
+
+.container button:hover {
+    background-color: rgb(5, 65, 83);
+
 }
